@@ -1,0 +1,96 @@
+aside.menu-info
+	h4 Полезные адреса
+	a(href="http://maxime-and-co.com/support/").support
+		img(src="img/support.png", alt="")
+	a(href="http://maxime-and-co.com/actualites/20-let-raboty/" target="_blank")
+		img(src="http://maxime-and-co.com/wp-content/uploads/Baner-20-let-2.gif", alt="")
+	.left-menu
+		| Здесь меню
+	a(href="http://maxime-and-co.com/pereselenie/")
+		img(src="http://maxime-and-co.com/wp-content/themes/Max2/banners/pereselenie.gif", alt="")
+aside.banners-info
+	h4 Подписаться на рассылку
+	.subscribe
+		p Введите адрес вашей почты:
+		form(action="")
+			input(type="text" name="" class="inp-subscribe")
+			input(type="submit" value="" class="submit-subscribe")
+		p
+			a(href="http://maxime-and-co.com/newsletters-details/") Подробности
+			a(href="javascript:void(0)" onclick="subscribe('subscribe_input_email',0,'RU')") Отказаться
+	a(href="http://www.russiefrance.org/ru/index.html" target="_blank")
+		img(src="http://maxime-and-co.com/wp-content/themes/Max2/banners/rcnk.gif", alt="")
+	a(href="http://maxime-and-co.com/gallery/")
+		img(src="http://maxime-and-co.com/wp-content/themes/Max2/banners/photo-gallery.gif", alt="")
+	a(href="http://maxime-and-co.com/narodnoe-tvorchestvo/")
+		img(src="http://maxime-and-co.com/wp-content/themes/Max2/banners/livres.gif", alt="")
+	a(href="http://maxime-and-co.com/turistam/")
+		img(src="http://maxime-and-co.com/wp-content/themes/Max2/banners/tourisme.gif", alt="")
+	.russian-observer
+		h4 Русский очевидец
+		.info-list
+			img(src="img/logo-rusoch.png", alt="")
+			a(href="").russian-observer__item
+				img(src="http://maxime-and-co.com/wp-content/uploads/thumb_sobor-80.jpg", alt="")
+				p Франция в ожидании хакеров на выборах
+			a(href="").russian-observer__item
+				img(src="http://rusoch.fr/files/2017/01/Concert-150x150.jpg", alt="")
+				p Кафедральный Свято-Троицкий собор Парижа приглашает
+			a(href="").russian-observer__item
+				img(src="http://rusoch.fr/files/2017/01/20170110_195253-150x150.jpg", alt="")
+				p Денис Мацуев первым испытал рояль в Российском центре на Бранли
+	.news-sidebar
+		h4 Новости
+		.info-list
+			.news-sidebar__item
+				span.news-sidebar__date 4 декабря 2016 г.
+				a(href="http://maxime-and-co.com/actualites/consecration-cathedrale/")
+					img(src="http://maxime-and-co.com/wp-content/uploads/thumb_sobor-80.jpg", alt="")
+					p Освящение патриархом Кириллом нового православного русского Свято-Троицкого собора в Париже
+					span.news-sidebar-more подробнее
+			.news-sidebar__item
+				span.news-sidebar__date 4 декабря 2016 г.
+				a(href="http://maxime-and-co.com/actualites/consecration-cathedrale/")
+					img(src="http://maxime-and-co.com/wp-content/uploads/thumb_petel-12-2016-80.jpg", alt="")
+					p Пастырский визит Святейшего Патриарха Московского и всея Руси Кирилла в Корсунскую епархию
+					span.news-sidebar-more подробнее
+			a(href="http://maxime-and-co.com/actualites/").news-sidebar__lnk Все новости
+	a(href="http://maxime-and-co.com/church/")
+		img(src="http://maxime-and-co.com/wp-content/themes/Max2/banners/church.gif" alt="church.gif")
+	a(href="http://infos-russes.com/bulletin-representation-commerciale-russe/" target="_blank")
+		img(src="http://maxime-and-co.com/wp-content/themes/Max2/banners/bulletin.jpg", alt="")
+	a(href="http://www.sovetnik.fr" target="_blank").sovetnik
+		img(src="http://maxime-and-co.com/wp-content/uploads/banner-SOVETNIK-215-90.jpg", alt="")
+	.vote
+		h4 Опрос
+		.info-list 
+			form(action="/index.php" id="polls_form_6" class="wp-polls-form" method="post")
+				p(style="display: none")
+					input(type="hidden" id="poll_6_nonce" name="wp-polls-nonce" value="a20e502ada")
+				p(style="display: none")
+					input(type="hidden" name="poll_id" value="6")
+				p.vote-header
+					strong Считаете ли вы правильной новую реформу французской орфографии?
+				#polls-6-ans.wp-polls-ans
+					ul.wp-polls-ul
+						li
+							input#poll-answer-72(type="radio" name="poll_6" value="72")
+							label(for="poll-answer-72") Да, давно пора было
+						li
+							input#poll-answer-73(type="radio" name="poll_6" value="73")
+							label(for="poll-answer-73") Не помешает, но можно было обойтись
+						li
+							input#poll-answer-74(type="radio" name="poll_6" value="74")
+							label(for="poll-answer-74") Нет, это очередной шаг к бескультурью
+						li
+							input#poll-answer-75(type="radio" name="poll_6" value="75")
+							label(for="poll-answer-75") Не знаю, мне всё равно
+					p
+						input(type="button" value="Vote" name="vote" class="Buttons" onclick="poll_vote(6)")
+					p
+						a(href="#ViewPollResults" onclick="poll_result(6); return false;" title="View Results Of This Poll") View Results
+			#polls-6-loading.wp-polls-loading
+				img(src="http://maxime-and-co.com/wp-content/plugins/wp-polls/images/loading.gif", alt="")
+				| &nbsp;Loading ...
+			p.vote-archive
+				a(href="http://maxime-and-co.com/polls-archive/" title="Архив опросов") Архив опросов
